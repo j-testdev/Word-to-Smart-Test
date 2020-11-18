@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Word a Smart Test</title>
+
+	<!-- Google web fonts -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+	<link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
+
+	<!-- The main CSS file -->
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="css/index.css" rel="stylesheet" />
+	<script type="text/javascript">
+//funcion para descargar
+function download(nombre, url) {
+	var link= document.createElement('a');
+	link.setAttribute('href', url);
+	link.setAttribute('download', nombre);
+	link.click();
+}
+
+//funcion que retrasa el avance en código
+function sleep(milliseconds) {
+	var start = new Date().getTime();
+	for (var i = 0; i < 1e7; i++) {
+		if ((new Date().getTime() - start) > milliseconds){
+			break;
+		}
+	}
+}
+
+function archlisto(name){
+	namew = name.substr(0, name.lastIndexOf(".")) + ".txt";
+	nameD = name.substr(0, name.lastIndexOf(".")) + " - daypo";
+	$.ajax({
+		async:  true, 
+		type: "POST",
+		url: "fuctions/funciones.php?code=2&nm="+namew+"",
+		data: "",
+		dataType:"html",
+		success: function(data){ 
+			var jsonw         = eval("(" + data + ")");
+			if(jsonw.exitoo == 0){
+				setTimeout('archlisto(\''+name+'\')',1000);
+			}else{
+				infoFile.innerHTML = jsonw.estado;
+				document.getElementById("panel-info").style.display = "block";
+				if(jsonw.descargar){
+					download(namew, 'downloads/'+namew+'');
+					download(nameD, 'downloads/'+nameD+'');
+				}
+			}
+
+		},
+		error: function(){setTimeout('archlisto(\''+name+'\')',1000);}
+	});
+}
+
+function cerrapanel(){
+	document.getElementById("panel-info").style.display = "none";
+}
+function borrar(nam){
+	if(nam == undefined || nam == null){nam = 'qweqweqwedwdfdestriurtodoqweqweqweqwe';}
+	$.post("fuctions/funciones.php?code=1&nm="+nam+"", function(data){});
+}
+</script>
+<style type="text/css">
+html{
+	min-height: auto !important;
+}</style>
+</head>
+
+<body onload="borrar();">
+
+	<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		<div id="drop">
+			Soltar aquí
+
+			<a>Buscar</a>
+			<input type="file" name="upl" multiple />
+		</div>
+
+		<ul>
+			<!-- The file uploads will be shown here -->
+		</ul>
+
+	</form>
+
+	<footer>
+		<h2><a href="http://juanjosegonzalezrodriguez.com.es"><i>Juanjo</i> © copyright</a></h2>
+	</footer>
+
+	<!-- JavaScript Includes -->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="assets/js/jquery.knob.js"></script>
+
+	<!-- jQuery File Upload Dependencies -->
+	<script src="assets/js/jquery.ui.widget.js"></script>
+	<script src="assets/js/jquery.iframe-transport.js"></script>
+	<script src="assets/js/jquery.fileupload.js"></script>
+
+	<!-- Our main JS file -->
+	<script src="assets/js/script.js"></script>
+
+
+	<!-- Only used for the demos. Please ignore and remove. --> 
+	<script src="http://cdn.tutorialzine.com/misc/enhance/v1.js" async></script>
+	<div id="datos"></div>
+	<div id="panel-info">
+		<span onclick="cerrapanel()">X</span>
+		<h2>Información del archivo</h2>
+		<div id="infoFile"></div>
+	</div>
+</body>
+</html>

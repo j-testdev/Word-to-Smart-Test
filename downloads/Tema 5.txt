@@ -1,0 +1,31 @@
+¿De qué color es el caballo blanco de Santiago? (Punto 3.4, Paula)##Negro##Rojo##@@Blanco##GrisFormulamos la pregunta y sus 2 o 4 opciones, marcamos la o las correctas en negrita Poned en qué punto se encuentra la respuesta entre paréntesis tras la pregunta y el nombre.@@5 - 6 preguntas cada uno MÍNIMO
+
+Cúal no es un tipo de cuenta de usuarios: (Juanjo)##Estándar##Administrador##Administrador local##@@Gestor
+
+Windows 10 permite crear dos nuevos tipos de usuarios: (Juanjo)##Administrador de red##Familiares##Otros usuarios##@@B y C
+
+Cúal no es un grupo de usuarios de  windows 10(Juanjo)##Local##De seguridad##@@De categoría##De distribución
+
+Grupos creados por defecto en windows 10: (Juanjo)##Administrador, duplicadores, invitados##Usuarios avanzados, lectores del registro de eventos##Operaciones de configuración de eventos##@@Todas son correctas
+
+Formas de crear, modificar y eliminar cuentas en W10:(Juanjo)##Desde Configuración##Desde panel de control##Desde herramientas administrativas##@@Todas son correctas
+
+A un usuario solo se le puede dar permisos de lectura y escritura:(Miguel)##Verdadero##@@Falso##Opción de relleno##Opción de relleno
+
+¿Que usuario da los permisos?:(Miguel)##El propio usuario se los pone con la supervisión de un administrador##@@El administrador##Cualquier usuario##Opción de relleno
+
+Los permisos se dan sobre:(Miguel)##Carpetas##Archivos##@@Ambos##Opción de relleno
+
+¿Qué son los recursos de un sistema?:(Miguel)##@@Los recursos de un sistema son los distintos elementos con los que ese sistema cuenta para que sean usados por los usuarios##Los recursos de un sistema son los distintos elementos con los que ese sistema cuenta para que sean usados por los administradores##Los recursos de un sistema son los distintos atributos con los que ese sistema cuenta para que sean usados por los usuarios##Opción de relleno
+
+Los usuario se pueden meter en grupos para dar permisos directamente al grupo y que todos esos usuarios tengan acceso:(Miguel)##@@Verdadero##Falso11 ¿Que es Windows Update?(Fran)##Opción de relleno##Opción de relleno
+
+La cuenta del invitado… (2.1.1 Santiago)##Viene habilitada por defecto##Viene deshabilitada por defecto##Permite el acceso a usuarios esporádicos o temporales del sistema##@@B y c
+
+Windows Defender permite realizar… (5.2 Santiago)##Actualizaciones para detección de nuevas amenazas##Análisis completos del sistema##Configurar análisis a medida del usuario##@@Todas son ciertas
+
+¿Para qué sirve EFS? (5.4.1 Santiago)##Para el cifrado de unidades completas de disco##@@Para el cifrado de archivos y carpetas##Para la compresión de archivos y carpetas##Para el cifrado de archivos, carpetas y unidades de disco
+
+Los recursos de un sistema son los distintos elementos con los que ese sistema cuenta para que sean usados por los usuarios. (3 Santiago)##@@Verdadero##Falso##Opción de relleno##Opción de relleno
+
+Cada recurso cuenta con una lista donde aparecen los usuarios que pueden usar dicho recurso y de qué forma pueden usarlo. (3 Santiago)##@@Verdadero##Falso54 Tener dos aplicaciones de configuración es más beneficioso que tener solo una:(Alejandro)##Opción de relleno##Opción de relleno

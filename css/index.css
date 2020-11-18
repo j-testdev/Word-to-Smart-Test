@@ -1,0 +1,35 @@
+.custominput{ calc(100% - 20px);
+    border-radius: 50px;
+    margin: 5px;
+    border: 1px solid #000;
+    outline: none;
+    color: #FFF;
+    background: #313131;
+    padding: 5px 10px 5px 10px;
+}
+.labelC{
+	color: #FFF;
+}
+#panel-info{
+    background: #383838;
+    width: 300px;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #389dc1 2px 2px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    display: none;
+}
+#panel-info > span{
+	float: right;
+	color: red;
+	margin-bottom: -5px;
+	cursor: pointer;
+}
+#infoFile{
+    overflow-y: auto;
+    max-height: 269px;
+}
